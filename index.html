@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+
+<head>
+	<meta charset="UTF-8">
+	<title> Starwars Hangman </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="text/js"	source="assets/javascript/game.js">
+
+<style>
+body {
+	background-color: black;
+	color: yellow;
+}
+.container .row .imageCollection {
+	width: 100%;
+}
+li {
+	display: inline;
+}
+#display {
+	border: dashed;
+	border-color:blue;
+}
+
+
+img {
+	max-width: 400px;
+}
+</style>
+
+</head>
+
+
+<body>
+	 
+
+
+	
+	<div class="container">
+    <h1>Hangman - In a Galaxy far far away... </h1>
+    <h1 id="youWin"> YOU WIN!!! The Force is Strong With You!!! </h1>  
+    <h1 id="youLose"> THE FORCE IS NOT WITH YOU... YOU LOSE. </h1>
+   
+    	<div class="row" id="display">
+		    <div  class="col-8">
+		    	<div class="imageCollection">
+				    <img id="chewbacca" src="assets/images/chewbacca.png"/>
+				    <img id="luke" src="assets/images/luke.jpg"/>
+				    <img id="yoda" src="assets/images/yoda.png"/>
+			    </div>
+		 	</div>
+		 	<div  class="col-4">
+		   		<p id="getStarted"> PRESS ANY KEY TO GET STARTED! </p>
+		   		<p id="playAgain"> Refresh Page to Play Again :/ </p>
+		   		<br>
+		   		<br>
+		   		<span>Current Word:</span>
+		   		<br>
+		   		
+		   		<ul id="currentWord"></ul>
+		   		
+		   		<br>
+		   		<span> Letters Guessed: </span>
+				<ul id="lettersGuessed"></ul>
+
+				<span> Remaining Lives: </span>
+				<p id="livesRemaining"> </p>
+
+		   	</div>
+  		</div>
+  		<p>Wins:</p> <p id="wins"></p>
+  		<p>Losses:</p><p id="losses"></p>
+	</div>
+
+	
+	
+
+
+       
+
+<script src="assets/javascript/game.js"></script>
+
+	
+
+
+
+</body>
+
+
+</html>
+
